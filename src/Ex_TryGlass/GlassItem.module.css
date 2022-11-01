@@ -1,0 +1,8 @@
+.glassItem {
+    margin: 20px 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 150px;
+    cursor: pointer;
+  }
+  

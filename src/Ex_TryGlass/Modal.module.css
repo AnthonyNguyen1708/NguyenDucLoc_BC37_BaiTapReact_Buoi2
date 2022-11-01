@@ -1,0 +1,30 @@
+.model {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .glass {
+    position: absolute;
+    width: 250px;
+    top: 25%;
+  }
+  
+  .detail {
+    position: absolute;
+    bottom: 0;
+    width: 480px;
+    background: #fab17c;
+  }
+  
+  .top {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+  
+  .des {
+    padding: 0 10px;
+    font-size: 18px;
+    color: white;
+  }
