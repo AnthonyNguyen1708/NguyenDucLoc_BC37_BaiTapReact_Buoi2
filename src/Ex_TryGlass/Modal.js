@@ -7,7 +7,7 @@ export default class Modal extends Component {
       <div className={styles.model}>
         <img className={styles.img} src="./glassesImage/model.jpg" alt="" />
 
-        {this.props.selectedGlass.url && (
+        {this.props.selectedGlass && (
           <img
             className={styles.glass}
             src={this.props.selectedGlass.url}
@@ -15,15 +15,17 @@ export default class Modal extends Component {
           />
         )}
 
-        <div className={styles.detail}>
-          <div className={styles.top}>
-            <h3 style={{ color: "blue" }}>{this.props.selectedGlass.name}</h3>
-            <p style={{ fontSize: "20px" }}>
-              {this.props.selectedGlass.price}$
-            </p>
+        {this.props.selectedGlass && (
+          <div className={styles.detail}>
+            <div className={styles.top}>
+              <h3 style={{ color: "blue" }}>{this.props.selectedGlass.name}</h3>
+              <p style={{ fontSize: "20px" }}>
+                {this.props.selectedGlass.price}$
+              </p>
+            </div>
+            <div className={styles.des}>{this.props.selectedGlass.desc}</div>
           </div>
-          <div className={styles.des}>{this.props.selectedGlass.desc}</div>
-        </div>
+        )}
       </div>
     );
   }
